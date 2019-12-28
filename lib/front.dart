@@ -9,6 +9,7 @@ class FrontSide extends StatelessWidget {
         padding: EdgeInsets.symmetric(vertical: 50.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           // mainAxisSize: MainAxisSize.max,
           children: <Widget>[
             Padding(
