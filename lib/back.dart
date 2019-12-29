@@ -1,26 +1,66 @@
 import 'package:flutter/material.dart';
-import 'widgets/buttons.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class BackSide extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Buttons(image: AssetImage('assets/github.png'), websiteName: 'Github', colour: Color(0xFF5C6BC0)),
-            SizedBox(height: 10.0),
-            Buttons(image: AssetImage('assets/facebook.png'), websiteName: 'Facebook', colour: Color(0xFF2076D2)),
-            SizedBox(height: 10.0),
-            Buttons(image: AssetImage('assets/instagram.png'), websiteName: 'Instagram', colour: Color(0xFFEC4041)),
-            SizedBox(height: 10.0),
-            Buttons(image: AssetImage('assets/linkedin.png'), websiteName: 'LinkedIn', colour: Color(0xFF2076D2)),
-            SizedBox(height: 10.0),
-            Buttons(image: AssetImage('assets/twitter.png'), websiteName: 'Twitter', colour: Color(0xFF3EAAF5)),
-          ],
-        ),
-      ),
+    return Center(
+      child: Container(
+          height: 300.0,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text(
+                'Flutter. Web Developer. UI/UX Designer',
+                style: GoogleFonts.roboto(
+                  textStyle: TextStyle(
+                    fontSize: 35.0,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              SizedBox(height: 30.0),
+              Text(
+                'I am passionate about learning new technologies with happy go lucky attitude.',
+                style: GoogleFonts.roboto(
+                    textStyle: TextStyle(
+                  fontSize: 20.0,
+                  fontWeight: FontWeight.w200,
+                )),
+              ),
+              SizedBox(height: 20.0),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  RaisedButton(
+                    onPressed: () {},
+                    child: Text(
+                      'Skills',
+                      style: GoogleFonts.roboto(
+                        textStyle: TextStyle(color: Colors.white),
+                      ),
+                    ),
+                    color: Colors.blue,
+                    splashColor: Colors.lightBlueAccent,
+                    shape: StadiumBorder(),
+                  ),
+                  SizedBox(width: 20.0),
+                  RaisedButton(
+                    onPressed: () {},
+                    child: Text(
+                      'Hire Me',
+                      style: GoogleFonts.roboto(
+                        textStyle: TextStyle(color: Colors.white),
+                      ),
+                    ),
+                    color: Colors.blue,
+                    splashColor: Colors.lightBlueAccent,
+                    shape: StadiumBorder(),
+                  ),
+                ],
+              )
+            ],
+          )),
     );
   }
 }
