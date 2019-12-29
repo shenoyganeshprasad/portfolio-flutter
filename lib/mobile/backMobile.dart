@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../widgets/url.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class BackMobile extends StatelessWidget {
@@ -38,9 +39,11 @@ class BackMobile extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     RaisedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        launchURL('https://drive.google.com/open?id=17Agu3FViXDQ_HM9Rd6cKml9kDLrq-9y6');
+                      },
                       child: Text(
-                        'Skills',
+                        'Resume',
                         style: GoogleFonts.roboto(
                           textStyle: TextStyle(color: Colors.white),
                         ),
