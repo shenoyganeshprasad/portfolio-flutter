@@ -73,7 +73,16 @@ class FrontMobile extends StatelessWidget {
                   websiteName: 'Twitter',
                   websiteLink: 'http://bit.ly/2NRb4zC',
                   colour: Color(0xFF3EAAF5)),
-              SizedBox(height: 8.0),
+              SizedBox(height: 20.0),
+              Text(
+                  'Tap anywhere to flip',
+                  style: GoogleFonts.roboto(
+                    textStyle: TextStyle(
+                      fontStyle: FontStyle.italic,
+                      fontWeight: FontWeight.w100,
+                    ),
+                  ),
+                ),
             ],
           ),
         ),

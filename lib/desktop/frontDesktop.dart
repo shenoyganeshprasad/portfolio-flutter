@@ -83,6 +83,16 @@ class FrontDesktop extends StatelessWidget {
                     SizedBox(width: 8.0),
                   ],
                 ),
+                SizedBox(height: 10.0),
+                Text(
+                  'Click anywhere to flip',
+                  style: GoogleFonts.roboto(
+                    textStyle: TextStyle(
+                      fontStyle: FontStyle.italic,
+                      fontWeight: FontWeight.w100,
+                    ),
+                  ),
+                ),
               ],
             ),
           ],

@@ -49,19 +49,19 @@ class BackMobile extends StatelessWidget {
                       splashColor: Colors.lightBlueAccent,
                       shape: StadiumBorder(),
                     ),
-                    SizedBox(width: 20.0),
-                    RaisedButton(
-                      onPressed: () {},
-                      child: Text(
-                        'Hire Me',
-                        style: GoogleFonts.roboto(
-                          textStyle: TextStyle(color: Colors.white),
-                        ),
-                      ),
-                      color: Colors.blue,
-                      splashColor: Colors.lightBlueAccent,
-                      shape: StadiumBorder(),
-                    ),
+                    // SizedBox(width: 20.0),
+                    // RaisedButton(
+                    //   onPressed: () {},
+                    //   child: Text(
+                    //     'Hire Me',
+                    //     style: GoogleFonts.roboto(
+                    //       textStyle: TextStyle(color: Colors.white),
+                    //     ),
+                    //   ),
+                    //   color: Colors.blue,
+                    //   splashColor: Colors.lightBlueAccent,
+                    //   shape: StadiumBorder(),
+                    // ),
                   ],
                 )
               ],
