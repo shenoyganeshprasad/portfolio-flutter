@@ -8,9 +8,11 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: FlipCard(
-          front: FrontSide(),
-          back: BackSide(),
+        child: Container(
+          child: FlipCard(
+            front: FrontSide(),
+            back: BackSide(),
+          ),
         ),
       ),
     );
