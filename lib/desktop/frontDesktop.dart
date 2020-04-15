@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../widgets/buttons.dart';
+import 'package:portfolio/utils/constants.dart';
 
 class FrontDesktop extends StatelessWidget {
   @override
@@ -37,12 +37,7 @@ class FrontDesktop extends StatelessWidget {
               children: <Widget>[
                 Text(
                   'Ganeshprasad Shenoy',
-                  style: GoogleFonts.roboto(
-                    textStyle: TextStyle(
-                      fontSize: 35.0,
-                      fontWeight: FontWeight.w500,
-                    ),
-                  ),
+                  style: kNameStyle,
                 ),
                 SizedBox(height: 20.0),
                 Row(
@@ -86,12 +81,7 @@ class FrontDesktop extends StatelessWidget {
                 SizedBox(height: 10.0),
                 Text(
                   'Click anywhere to flip',
-                  style: GoogleFonts.roboto(
-                    textStyle: TextStyle(
-                      fontStyle: FontStyle.italic,
-                      fontWeight: FontWeight.w100,
-                    ),
-                  ),
+                  style: kSubtitleStyle,
                 ),
               ],
             ),

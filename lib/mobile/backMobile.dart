@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/utils/constants.dart';
 import '../widgets/url.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -16,22 +17,13 @@ class BackMobile extends StatelessWidget {
               children: <Widget>[
                 Text(
                   'Flutter. Web Developer. UI/UX Designer',
-                  style: GoogleFonts.roboto(
-                    textStyle: TextStyle(
-                      fontSize: 35.0,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
+                  style: kSkillStyle,
                   textAlign: TextAlign.center,
                 ),
                 SizedBox(height: 30.0),
                 Text(
                   'I am passionate about learning new technologies with happy go lucky attitude.',
-                  style: GoogleFonts.roboto(
-                      textStyle: TextStyle(
-                    fontSize: 20.0,
-                    fontWeight: FontWeight.w200,
-                  )),
+                  style: kAboutMeStyle,
                   textAlign: TextAlign.center,
                 ),
                 SizedBox(height: 20.0),
@@ -40,7 +32,7 @@ class BackMobile extends StatelessWidget {
                   children: <Widget>[
                     RaisedButton(
                       onPressed: () {
-                        launchURL('https://drive.google.com/open?id=17Agu3FViXDQ_HM9Rd6cKml9kDLrq-9y6');
+                        launchURL('https://drive.google.com/file/d/1dKMfeY79Dp0j3xX4SEk_tAKi8Y-lEkW_/view?usp=sharing');
                       },
                       child: Text(
                         'Resume',
@@ -52,19 +44,6 @@ class BackMobile extends StatelessWidget {
                       splashColor: Colors.lightBlueAccent,
                       shape: StadiumBorder(),
                     ),
-                    // SizedBox(width: 20.0),
-                    // RaisedButton(
-                    //   onPressed: () {},
-                    //   child: Text(
-                    //     'Hire Me',
-                    //     style: GoogleFonts.roboto(
-                    //       textStyle: TextStyle(color: Colors.white),
-                    //     ),
-                    //   ),
-                    //   color: Colors.blue,
-                    //   splashColor: Colors.lightBlueAccent,
-                    //   shape: StadiumBorder(),
-                    // ),
                   ],
                 )
               ],

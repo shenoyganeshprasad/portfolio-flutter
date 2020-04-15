@@ -35,7 +35,7 @@ class BackDesktop extends StatelessWidget {
               children: <Widget>[
                 RaisedButton(
                   onPressed: () {
-                    launchURL('https://drive.google.com/open?id=17Agu3FViXDQ_HM9Rd6cKml9kDLrq-9y6');
+                    launchURL('https://drive.google.com/file/d/1dKMfeY79Dp0j3xX4SEk_tAKi8Y-lEkW_/view?usp=sharing');
                   },
                   child: Text(
                     'Resume',
@@ -47,21 +47,6 @@ class BackDesktop extends StatelessWidget {
                   splashColor: Colors.lightBlueAccent,
                   shape: StadiumBorder(),
                 ),
-                // SizedBox(width: 20.0),
-                // RaisedButton(
-                //   onPressed: () {
-                //     launchMail();
-                //   },
-                //   child: Text(
-                //     'Hire Me',
-                //     style: GoogleFonts.roboto(
-                //       textStyle: TextStyle(color: Colors.white),
-                //     ),
-                //   ),
-                //   color: Colors.blue,
-                //   splashColor: Colors.lightBlueAccent,
-                //   shape: StadiumBorder(),
-                // ),
               ],
             )
           ],

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../widgets/buttons.dart';
+import 'package:portfolio/utils/constants.dart';
 
 class FrontMobile extends StatelessWidget {
   @override
@@ -35,12 +35,7 @@ class FrontMobile extends StatelessWidget {
               SizedBox(height: 20.0),
               Text(
                 'Ganeshprasad Shenoy',
-                style: GoogleFonts.roboto(
-                  textStyle: TextStyle(
-                    fontSize: 35.0,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
+                style: kNameStyle,
                 textAlign: TextAlign.center,
               ),
               SizedBox(height: 20.0),
@@ -76,12 +71,7 @@ class FrontMobile extends StatelessWidget {
               SizedBox(height: 20.0),
               Text(
                   'Tap anywhere to flip',
-                  style: GoogleFonts.roboto(
-                    textStyle: TextStyle(
-                      fontStyle: FontStyle.italic,
-                      fontWeight: FontWeight.w100,
-                    ),
-                  ),
+                  style: kSubtitleStyle,
                 ),
             ],
           ),
